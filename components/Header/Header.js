@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Logo from '../Logo/Logo';
-import Social from '../Social/Social';
 import DesktopNavigation from '../Navbar/DesktopNavigation';
 import MobileNavigation from '../Navbar/MobileNavigation';
 

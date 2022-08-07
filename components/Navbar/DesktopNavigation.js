@@ -5,7 +5,7 @@ const NavLink = ({ href, text }) => {
 	return (
 		<li>
 			<Link href={href}>
-				<a className='py-2 px-4  hover:text-white'>{text}</a>
+				<a className='py-2 px-4  hover:text-black'>{text}</a>
 			</Link>
 		</li>
 	);

@@ -5,7 +5,7 @@ import React from 'react';
 const Logo = () => {
 	return (
 		<Link href='/'>
-			<a className='text-xl font-medium'>amazon</a>
+			<a className='text-xl font-bold'>amazon</a>
 		</Link>
 	);
 };
