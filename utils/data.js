@@ -45,8 +45,8 @@ const data = {
 			description: 'Running Jacket',
 		},
 		{
-			name: 'Nike Winderunner',
-			slug: 'nike-winderunner',
+			name: 'Nike Runner',
+			slug: 'nike-runner',
 			category: 'Running Jacket',
 			image: '/Images/runner3.webp',
 			price: 96.97,

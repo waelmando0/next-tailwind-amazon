@@ -1,22 +1,32 @@
 import Link from 'next/link';
 import React from 'react';
-
-const NavLink = ({ href, text }) => {
-	return (
-		<li>
-			<Link href={href}>
-				<a className='py-2 px-4  hover:text-black'>{text}</a>
-			</Link>
-		</li>
-	);
-};
+import { useContext } from 'react';
+import { Store } from '../../utils/store';
 
 const DesktopNavigation = () => {
+	const { state, dispatch } = useContext(Store);
+	const { cart } = state;
+
 	return (
 		<nav className='hidden md:flex'>
 			<ul className='flex items-center justify-center'>
-				<NavLink href='/cart' text='Cart' />
-				<NavLink href='/login' text='Login' />
+				<li>
+					<Link href='/cart'>
+						<a className='py-2 px-4  hover:text-black flex items-center'>
+							Cart
+							{cart.cartItems.length > 0 && (
+								<span className='ml-1 rounded-full bg-red-600 w-6 h-6 text-xs font-bold text-white flex items-center justify-center'>
+									{cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
+								</span>
+							)}
+						</a>
+					</Link>
+				</li>
+				<li>
+					<Link href='/login'>
+						<a className='py-2 px-4  hover:text-black'>Login</a>
+					</Link>
+				</li>
 			</ul>
 		</nav>
 	);

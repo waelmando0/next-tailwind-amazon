@@ -15,6 +15,7 @@ const ProductItem = ({ product }) => {
 							alt={product.name}
 							objectFit='cover'
 							layout='fill'
+							priority
 						/>
 					</a>
 				</Link>
@@ -24,12 +25,6 @@ const ProductItem = ({ product }) => {
 					<a className='font-semibold'>{product.name}</a>
 				</Link>
 				<h4 className='text-gray-500'>{product.category}</h4>
-				<ReactStars
-					count={5}
-					value={product.rating}
-					size={24}
-					color2={'#ffd700'}
-				/>
 				<div className='flex items-center justify-between mt-4'>
 					<p className='font-semibold'>${product.price}</p>
 					<button

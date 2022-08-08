@@ -22,3 +22,10 @@ description
    4. Show Product info in second column
    5. Show add to cart action on third column
    6. add styles
+7. Handle Add To Cart
+   1. define react context
+   2. define cart items state
+   3. create added to cart action
+   4. add reducer
+   5. create store provider
+   6. handle add to cart button
