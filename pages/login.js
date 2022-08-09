@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import Head from 'next/head';
 import { useForm } from 'react-hook-form';
 
 export default function loginScreen() {
@@ -15,6 +16,9 @@ export default function loginScreen() {
 
 	return (
 		<section>
+			<Head>
+				<title>Login</title>
+			</Head>
 			<div className='py-16 lg:mx-16'>
 				<form
 					className='max-w-screen-sm mx-auto'
