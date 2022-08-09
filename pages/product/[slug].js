@@ -9,7 +9,7 @@ import { useContext } from 'react';
 
 const ProductScreen = () => {
 	const { state, dispatch } = useContext(Store);
-
+	const router = useRouter();
 	const { query } = useRouter();
 	const { slug } = query;
 	const product = data.products.find((x) => x.slug === slug);
@@ -28,6 +28,7 @@ const ProductScreen = () => {
 		}
 
 		dispatch({ type: 'CART_ADD_ITEM', payload: { ...product, quantity } });
+		router.push('/cart');
 	};
 
 	return (
@@ -76,7 +77,7 @@ const ProductScreen = () => {
 								nisi minus inventore, rerum at recusandae?
 							</li>
 						</ul>
-						<div className='bg-black text-gray-200 rounded px-4 py-8 mt-8 font-medium'>
+						<div className='bg-black/75 text-gray-200 rounded px-4 py-8 mt-8 font-medium'>
 							<div className='mb-2 flex justify-between'>
 								<div>Price</div>
 								<div className='text-lg'>${product.price}</div>
