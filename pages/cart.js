@@ -103,7 +103,7 @@ function CartScreen() {
 								</li>
 								<li>
 									<button
-										onClick={() => router.push('/shipping')}
+										onClick={() => router.push('login?redirect=/shipping')}
 										className='block font-medium bg-white hover:bg-gray-100 text-black w-full py-2 rounded'
 									>
 										Ceck Out
