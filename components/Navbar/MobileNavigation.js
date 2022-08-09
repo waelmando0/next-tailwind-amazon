@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import clsx from 'clsx';
 
-const MobileNavigation = () => {
+function MobileNavigation() {
 	return (
 		<nav className='flex md:hidden'>
 			<Popover>
@@ -79,6 +79,6 @@ const MobileNavigation = () => {
 			</Popover>
 		</nav>
 	);
-};
+}
 
 export default MobileNavigation;

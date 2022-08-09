@@ -3,7 +3,7 @@ import Logo from '../Logo/Logo';
 import DesktopNavigation from '../Navbar/DesktopNavigation';
 import MobileNavigation from '../Navbar/MobileNavigation';
 
-const Header = () => {
+function Header() {
 	return (
 		<header className='w-full bg-white shadow z-30'>
 			<div className='max-w-6xl mx-auto px-5 sm:px-6'>
@@ -20,6 +20,6 @@ const Header = () => {
 			</div>
 		</header>
 	);
-};
+}
 
 export default Header;

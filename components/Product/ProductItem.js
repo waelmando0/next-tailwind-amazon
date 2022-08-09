@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import ReactStars from 'react-stars';
 
-const ProductItem = ({ product }) => {
+function ProductItem({ product }) {
 	return (
 		<div>
 			<div className='w-full overflow-hidden aspect-w-4 aspect-h-4'>
@@ -37,6 +37,6 @@ const ProductItem = ({ product }) => {
 			</div>
 		</div>
 	);
-};
+}
 
 export default ProductItem;

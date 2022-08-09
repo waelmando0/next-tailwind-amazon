@@ -7,7 +7,7 @@ import { Store } from '../../utils/store';
 import ReactStars from 'react-stars';
 import { useContext } from 'react';
 
-const ProductScreen = () => {
+function ProductScreen() {
 	const { state, dispatch } = useContext(Store);
 	const router = useRouter();
 	const { query } = useRouter();
@@ -100,6 +100,6 @@ const ProductScreen = () => {
 			</div>
 		</section>
 	);
-};
+}
 
 export default ProductScreen;

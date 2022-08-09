@@ -1,7 +1,7 @@
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 
-const Layout = ({ children }) => {
+function Layout({ children }) {
 	return (
 		<div className='flex flex-col overflow-hidden min-h-screen'>
 			<Header />
@@ -9,6 +9,6 @@ const Layout = ({ children }) => {
 			<Footer />
 		</div>
 	);
-};
+}
 
 export default Layout;

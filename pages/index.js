@@ -2,7 +2,7 @@ import Head from 'next/head';
 import ProductItem from '../components/Product/ProductItem';
 import data from '../utils/data';
 
-const Home = ({ products }) => {
+function Home({ products }) {
 	return (
 		<section>
 			<Head>
@@ -17,6 +17,6 @@ const Home = ({ products }) => {
 			</div>
 		</section>
 	);
-};
+}
 
 export default Home;
