@@ -2,8 +2,11 @@ import Link from 'next/link';
 import React from 'react';
 import { useContext, useState, useEffect } from 'react';
 import { Store } from '../../utils/store';
+import { signOut, useSession } from 'next-auth/react';
 
 function DesktopNavigation() {
+	const { status, data: session } = useSession();
+
 	const { state, dispatch } = useContext(Store);
 	const { cart } = state;
 	const [cartItemsCount, setCartItemsCount] = useState(0);
@@ -27,9 +30,15 @@ function DesktopNavigation() {
 					</Link>
 				</li>
 				<li>
-					<Link href='/login'>
-						<a className='py-2 px-4  hover:text-black'>Login</a>
-					</Link>
+					{status === 'loading' ? (
+						'Loading'
+					) : session?.user ? (
+						session.user.name
+					) : (
+						<Link href='/login'>
+							<a className='py-2 px-4  hover:text-black'>Login</a>
+						</Link>
+					)}
 				</li>
 			</ul>
 		</nav>
