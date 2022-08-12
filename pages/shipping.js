@@ -53,7 +53,7 @@ export default function shippingScreen() {
 			<Head>
 				<title>Shipping</title>
 			</Head>
-			<div className='py-16  lg:mx-16'>
+			<div className='py-16 lg:mx-16'>
 				<CheckoutWizard activeStep={1} />
 				<form
 					className='max-w-screen-md mx-auto'
