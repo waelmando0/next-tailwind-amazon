@@ -90,7 +90,7 @@ export default function loginScreen() {
 						)}
 					</div>
 					<div className='mb-4'>
-						<button className='bg-black py-2 px-4 shadow  hover:opacity-70 text-white'>
+						<button className='bg-black py-2 px-4 shadow  hover:opacity-70 text-white rounded'>
 							Login
 						</button>
 					</div>

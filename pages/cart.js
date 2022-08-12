@@ -34,9 +34,9 @@ function CartScreen() {
 				<h1 className='mb-4 text-xl'>Shopping Cart</h1>
 				{cartItems.length === 0 ? (
 					<div>
-						Cart is empty{' '}
+						Cart is empty.
 						<Link href='/'>
-							<a>Go Shopping</a>
+							<a className='text-blue-600 hover:underline'> Go Shopping</a>
 						</Link>
 					</div>
 				) : (

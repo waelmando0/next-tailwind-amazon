@@ -59,3 +59,6 @@ description
     1. Check user authentication
     2. Install headlessui
     3. Show User Menu
+15. Create Shipping Screen
+    1. Display address fields
+    2. Save address in context
