@@ -97,7 +97,9 @@ export default function loginScreen() {
 					<div className='mb-4'>
 						Don&apos;t have an account? &nbsp;
 						<Link href='/register'>
-							<a className='font-medium hover:underline'>Register</a>
+							<a className='font-medium hover:underline text-blue-600'>
+								Register
+							</a>
 						</Link>
 					</div>
 				</form>
