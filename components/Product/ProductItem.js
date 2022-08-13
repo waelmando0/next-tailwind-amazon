@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import ReactStars from 'react-stars';
 
-function ProductItem({ product }) {
+function ProductItem({ product, addToCartHandler }) {
 	return (
 		<div>
 			<div className='w-full overflow-hidden aspect-w-4 aspect-h-4'>
@@ -30,6 +30,7 @@ function ProductItem({ product }) {
 					<button
 						type='button'
 						className='py-1.5 px-3 text-xs md:text-base md:py-2 md:px-4 bg-black text-white hover:opacity-70'
+						onClick={() => addToCartHandler(product)}
 					>
 						Add to cart
 					</button>
