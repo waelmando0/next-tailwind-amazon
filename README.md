@@ -78,3 +78,7 @@ description
     2. Display payment method
     3. Display order items
     4. Implement create order
+20. Create Order Screen
+    1. Implement backend api for order details
+    2. Load order data from backend
+    3. Display order details
